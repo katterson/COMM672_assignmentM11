@@ -12,7 +12,15 @@ h1 {
     font-size: 3rem;
     font-family: "Nanum Myeongjo", serif;
     font-weight: 400;
+    color: #fff;
     font-style: normal;
+    text-align: center;
+    border: solid 1px #222e50;
+    background-color: #222e50;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .container {
     max-width: 1200px;
@@ -105,6 +113,13 @@ body.home {
 }
 .hero {
     background-color: #FFCF83;
+}
+.hero-text h1 {
+    border: none;
+    background-color: transparent;
+    color: #000;
+   display: block;
+   text-align: left;
 }
 .hero .container {
     display: flex;
@@ -241,15 +256,20 @@ body.home {
 }
 .feature-page-block ul {
     list-style: none;
+    padding-left: 10px;
 }
 .feature-page-block ul li {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
 }
 .feature-page-block ul li::before {
     content: "\f1b0";
     font-family: "Font Awesome 7 Free";
     font-weight: 900;
     margin-right: 10px;
+    position: absolute;
+    left: 0;
 }
 .feature-page-block h3 {
     text-align: center;
@@ -258,6 +278,7 @@ body.home {
     height: 200px;
     object-fit: cover;
 }
+
 /**Contact**/
 .contact-container {
     display: flex;
@@ -435,6 +456,9 @@ footer img {
     .hero .hero-text {
         width: 100%;
         margin-bottom: 30px;
+    }
+    .hero-text h1 {
+        text-align: center;
     }
     .feature-container {
         flex-direction: column;
