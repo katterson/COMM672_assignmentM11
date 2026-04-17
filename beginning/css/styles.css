@@ -166,39 +166,43 @@ body.home {
     flex: auto;
     width: 33%;
 }
-.team {
-    padding-bottom: 20px;
+/**About Page**/
+
+.about .container {
+    max-width: 900px;
 }
-.team img {
-    width: 80px;
+.container-careers {
+    padding: 40px;
+}
+.about-intro {
+    display: flex;
+    justify-content:space-evenly;
+    gap: 10px;
+    padding: 0 40px;
+}
+iframe { 
+    width: 100%;
+    aspect-ratio: 16 / 9;
+}
+.team-block img {
+    width: 100px;
 }
 .team-container {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+    border: solid 1px #efefef;
+    background-color: #efefef;
+    height: 300px;
+    align-items: center;
+    margin: auto;
 }
 .team-block {
     text-align: center;
     width: 25%;
-}
-/**About Page**/
-.about .container {
-    max-width: 900px;
-}
-.about-block {
-    display: flex;
-    gap: 20px;
-    align-items: center;
-}
-.about-block img {
-    width: 80px;
-    height: 80px;
+    margin: 0 auto;
 }
 
-/* iframe { 
-    width: 100%;
-    aspect-ratio: 16 / 9;
-} */
 
 /**Community Page**/
 .community {
@@ -474,11 +478,15 @@ footer img {
     .testimonial-block {
         width: 100%;
     }
+
+    /* about-page */
     .team-container {
         flex-wrap: wrap;
         justify-content: center;
     }
     .about {
+        display: flex;
+        flex-direction: row;
         text-align: center;
     }
     .about-container {
