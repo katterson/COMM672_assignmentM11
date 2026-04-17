@@ -239,6 +239,18 @@ body.home {
     padding: 20px;
     border-radius: 20px;
 }
+.feature-page-block ul {
+    list-style: none;
+}
+.feature-page-block ul li {
+    margin-bottom: 5px;
+}
+.feature-page-block ul li::before {
+    content: "\f1b0";
+    font-family: "Font Awesome 7 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
 .feature-page-block h3 {
     text-align: center;
 }
